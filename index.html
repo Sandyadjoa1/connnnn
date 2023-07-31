@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Sacramento&display=swap"
+        rel="stylesheet">
+
 
     <title>Contact Page</title>
     <style>
         body {
-            background-color: purple;
+            background-color: rgb(153, 179, 236);
             font-family: Arial, sans-serif;
             color: white;
         }
+
         .header {
             background-color: lightblue;
             padding: 10px;
         }
+
         .header img {
             max-width: 100px;
             vertical-align: middle;
         }
+
         .header button {
             background-color: lightblue;
             border: none;
@@ -30,10 +39,31 @@
             margin: 4px 2px;
             cursor: pointer;
         }
+
+        .hero {
+            width: 40%;
+            margin: auto;
+            padding: 10px;
+
+        }
+
+        .row-1 {
+            flex: auto;
+            text-align: center;
+            font-size: large;
+            padding: 15px;
+
+
+
+
+        }
+
         .form-container {
             margin: 20px;
         }
-        .form-container input[type=text], .form-container textarea {
+
+        .form-container input[type=text],
+        .form-container textarea {
             width: 100%;
             padding: 12px 20px;
             margin: 8px 0;
@@ -41,6 +71,7 @@
             border: 2px solid lightblue;
             border-radius: 4px;
         }
+
         .form-container input[type=submit] {
             background-color: lightblue;
             color: white;
@@ -50,39 +81,58 @@
             cursor: pointer;
             float: right;
         }
+
         .social-icons {
-            background-color: lightblue;
+            padding-top: 10px;
             padding: 10px;
             margin-top: 20px;
         }
+
         .social-icons img {
             width: 40px;
             padding-left: 15px;
             padding-top: 20px;
-           padding-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        #name {
+            font-family: Sacramento;
+            font-size: 30px;
+        }
+        .texts{
+            padding-top: 2px;
+        }
+        button:hover{
+            background-color: rgb(186, 236, 248);
+            color: white;
+
         }
     </style>
 </head>
+
 <body>
     <div class="header">
         <button>Home</button>
         <button>Gallery</button>
         <button>Resume</button>
         <button>Contact</button>
-        <button style="float: right;">Search</button>
     </div>
-     
-    <div>
-        <img src="https://miro.medium.com/v2/resize:fit:1100/0*hLd853lXaMi0x9lW" alt="Your Logo" width="300" height="300">
+
+    <div class="hero">
+        <div>
+            <img src="https://miro.medium.com/v2/resize:fit:1100/0*hLd853lXaMi0x9lW" alt="Your Logo" width="500"
+                height="400">
         </div>
-     
-    <div class="row-1">
-            <div>
-              <p id="portfolio">Portfolio</p>
-              <p id="name">Alexandria Smith</p>
+
+        <div class="row-1">
+            <div class="texts">
+
+                <p id="name">Alexandria Smith</p>
+                <p id="portfolio">Web Designer</p>
             </div>
-          </div>
-      
+        </div>
+    </div>
+
 
 
     <div class="form-container">
@@ -101,28 +151,29 @@
             <textarea id="message" name="message" required></textarea>
 
             <label for="country">Country:</label>
-            <input type="text" id="country" name="country">
             <select id="country" name="Country">
                 <option value="united kingdom">United Kingdom</option>
-                 <option value="australia">Australia</option>
-                 <option value="canada">Canada</option>
-                 <option value="usa">USA</option>
-               </select>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
 
             <input type="submit" value="Submit">
+            <br>
         </form>
     </div>
 
-     <footer>
-     <div class="social-icons" style="background-color: lightblue;">
-     <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook Icon">
-     <img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" alt="Twitter Icon">
-     <img src="https://www.pinterest.com/favicon.ico" alt="Pinterest">
-     <img src="https://www.linkedin.com/favicon.ico" alt="linkedin">
+    <footer>
+        <div class="social-icons">
+            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook Icon">
+            <img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" alt="Twitter Icon">
+            <img src="https://www.pinterest.com/favicon.ico" alt="Pinterest">
+            <img src="https://www.linkedin.com/favicon.ico" alt="linkedin">
 
 
-     </div>
-        
+        </div>
+
 
 </body>
+
 </html>
